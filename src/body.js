@@ -4,14 +4,12 @@ const body = (() => {
   const body = document.body;
   const init = () => {
     const classBody = css`
-      display: grid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 0;
-      min-height: 100vh;
-      grid-template-columns: 1fr;
-      grid-template-rows: 100px 1fr;
-      grid-template-areas: 
-        "header"
-        "content";
+      height: 100vh;
+      width: 100vw;
     `;
     body.className = classBody;
   };

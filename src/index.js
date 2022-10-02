@@ -1,11 +1,9 @@
-import { header } from '/src/header.js';
 import { body } from '/src/body.js';
-import { content } from '/src/content.js';
 import { gameBoard } from '/src/gameBoard';
+import { knightMoves, Node } from '/src/knightMoves';
 
 window.onload = () => {
   body.init();
-  header.init();
-  content.init();
   gameBoard.init();
+  knightMoves.init();
 };
